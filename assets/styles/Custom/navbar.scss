@@ -1,0 +1,28 @@
+
+.nav-main {
+
+    .navbar-brand {
+        color: $textColor;
+        text-decoration: underline;
+        font-weight: bold;
+        margin-bottom: -2%;
+
+        &:hover {
+            animation: homeButtonAnim 0.8s;
+        }
+    }
+
+    background-color: $bgColor;
+
+    .nav-item { display: inline-flex; }
+
+    .nav-link {
+        border-radius: 90px;
+        list-style: none;
+        text-decoration: none;
+        color: $textColor;
+        &:hover {
+            animation: navLinkAnimIn 1s forwards;
+        }
+    }
+}

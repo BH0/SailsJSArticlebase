@@ -1,0 +1,57 @@
+/* Home Button (Home)) */
+@keyframes homeButtonAnim { // attempted to use SASS to reduce number of lines
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(4.5deg);
+    }
+    20% {
+        transform: rotate(9deg);
+    }
+    30% {
+        transform: rotate(4.5deg);
+    }
+    40% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(-4.5deg)
+    }
+    60% {
+        transform: rotate(-9deg);
+    }
+    70% {
+        transform: rotate(-4.5deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    90% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Navigation Link (Hover) */
+$gradientStart: #f3e8f9;
+$gradientMid: #ccbed3;
+$gradientEnd: $bgColor;
+@keyframes navLinkAnimIn {
+    0% {
+        font-size: 100%;
+        background: $gradientStart;
+    }
+    50% {
+        // background: linear-gradient($gradie);
+        // background: radial-gradient(red 5%, yellow 15%);
+        background: $gradientMid;
+    }
+    100% {
+        // background: radial-gradient(red 10%, yellow 25%, green 50%);
+        background: $gradientEnd;
+        font-size: 120%;
+    }
+}

@@ -1,0 +1,16 @@
+/// Dependancy files
+@import 'variables';
+@import 'animations';
+@import 'bulletpoint';
+
+/// Components / Pages
+@import 'navbar';
+@import 'homepage';
+
+@import 'list';
+//@import 'fullArticle'; // to do
+@import 'addPage.scss';
+@import 'login';
+
+//@import 'editButton'; // to do
+//@import 'deleteButton'; // to do 

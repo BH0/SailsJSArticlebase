@@ -1,0 +1,30 @@
+<h1 class="display-4"> Articles </h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> ID </th>
+            <th> Title </th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--
+        <%/* sails.log(User.userIsLoggedIn); */ %> /* if (User.userIsLoggedIn) { */ %>
+            <!-- Note: due to variable (type) definition issue/s, "userIsLoggedIn"
+                may become an inteeger instead of a boolean, true: 1, false: 0
+            -->
+            <% articles.forEach(function(article) { %>
+                <tr>
+                    <td><%= article.id %> </td>
+                    <td><a href="/articles/visit/<%= article.id %>"><%= article.title %></a></td>
+                    <td>
+                        <a class="btn btn-primary" href="/articles/edit/<%= article.id %>">Edit? </a>
+                        <form action="/articles/delete/<%= article.id %>" method="post" class="d-inline">
+                            <input class="btn-danger" type="submit" value="Delete?">
+                        </form>
+                    </td>
+                </tr>
+            <% }); %>
+        <%// } %>
+    </tbody>
+</table>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=typeof title == 'undefined' ? 'New Sails App' : title%></title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS Dependancies -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/Custom/main.css">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <!--STYLES END-->
+  </head>
+
+    <body>
+        <nav class="nav-main">
+            <div class="row center-xs middle-xs">
+                <a class="navbar-brand" href="/"><h2>ArticleBase</h2></a>
+            </div>
+
+            <div class="row center-xs center-md center-lg middle-sm middle-md middle-lg">
+                <div class="col-sm-5 col-md-5 col-lg-5">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles/list">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles/add">Add Article</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles/logina">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row center-xs middle-xs">
+                <div>
+                    <%- body %>
+                </div>
+            </div>
+
+        </div>
+
+    <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <!--SCRIPTS END-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>

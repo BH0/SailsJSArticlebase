@@ -1,0 +1,19 @@
+
+.homepage-container { 
+
+    .welcome-title {
+        color: $textColor;
+    }
+
+    .list-page-link, .add-page-link, .login-page-link {
+        text-decoration: none;
+        color: $textColor;
+    }
+
+    .homepage-main-content * {
+        display: block;
+        line-height: 4px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+}

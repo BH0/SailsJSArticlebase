@@ -1,0 +1,124 @@
+/* Home Button (Home)) */
+@keyframes homeButtonAnim {
+  0% {
+    transform: rotate(0deg); }
+  10% {
+    transform: rotate(4.5deg); }
+  20% {
+    transform: rotate(9deg); }
+  30% {
+    transform: rotate(4.5deg); }
+  40% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-4.5deg); }
+  60% {
+    transform: rotate(-9deg); }
+  70% {
+    transform: rotate(-4.5deg); }
+  80% {
+    transform: rotate(0deg); }
+  90% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+/* Navigation Link (Hover) */
+@keyframes navLinkAnimIn {
+  0% {
+    font-size: 100%;
+    background: #f3e8f9; }
+  50% {
+    background: #ccbed3; }
+  100% {
+    background: #caafd8;
+    font-size: 120%; } }
+.homepage-container b:before {
+  content: '\f006';
+  font-family: 'FontAwesome';
+  color: blue; }
+
+.nav-main {
+  background-color: #caafd8; }
+  .nav-main .navbar-brand {
+    color: #431859;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: -2%; }
+    .nav-main .navbar-brand:hover {
+      animation: homeButtonAnim 0.8s; }
+  .nav-main .nav-item {
+    display: inline-flex; }
+  .nav-main .nav-link {
+    border-radius: 90px;
+    list-style: none;
+    text-decoration: none;
+    color: #431859; }
+    .nav-main .nav-link:hover {
+      animation: navLinkAnimIn 1s forwards; }
+
+.homepage-container .welcome-title {
+  color: #431859; }
+.homepage-container .list-page-link, .homepage-container .add-page-link, .homepage-container .login-page-link {
+  text-decoration: none;
+  color: #431859; }
+.homepage-container .homepage-main-content * {
+  display: block;
+  line-height: 4px;
+  padding-top: 22px;
+  padding-bottom: 22px; }
+
+/* Affects 'Add.ejs' however this file's name was changed due to
+what I suspect to be filename conflicts */
+/* Login Pafe */
+.add-container .add-title {
+  font-size: 160%; }
+.add-container label, .add-container .add-title, .add-container * {
+  color: #431859; }
+.add-container label {
+  font-weight: bold;
+  font-style: oblique; }
+.add-container input {
+  display: inline;
+  padding: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 4px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  box-shadow: 3px 4px 4px 4px #caafd8; }
+.add-container textarea {
+  display: block;
+  padding: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 4px;
+  margin-top: 12px;
+  box-shad: 3px 4px 4px 4px #caafd8;
+  width: 500px;
+  height: 300px; }
+.add-container .add-button {
+  border: 2px solid #ccbed3;
+  background-color: #caafd8; }
+  .add-container .add-button:hover {
+    cursor: pointer;
+    animation: navLinkAnimIn 1s forwards; }
+
+/* Login Pafe */
+.login-container .login-title {
+  font-size: 160%; }
+.login-container label, .login-container .login-title, .login-container * {
+  color: #431859; }
+.login-container label {
+  font-weight: bold;
+  font-style: oblique; }
+.login-container input {
+  display: block;
+  padding: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 4px;
+  margin-top: 12px;
+  margin-bottom: 14px;
+  box-shadow: 3px 4px 4px 4px #caafd8; }
+.login-container .login-button {
+  border: 2px solid #ccbed3;
+  background-color: #caafd8; }
+  .login-container .login-button:hover {
+    cursor: pointer;
+    animation: navLinkAnimIn 1s forwards; }
+
+/*# sourceMappingURL=main.css.map */
