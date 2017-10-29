@@ -3,12 +3,12 @@
 a [Sails](http://sailsjs.org) application
 
 
-
-
+# About Project 
+A Sails JS application which was started thanks to Traversy Media's Sails JS application Youtube tutorial. A place for me to improve both my backend and frontend web development knowledge. (Hobbyist project). 
 
 # Tasks To Do (Not exactly ordered)
 * Implement Full-Article page - done
-* Replace Bootstrap with FlexboxGrid
+* Replace Bootstrap with FlexboxGrid - done / in progress 
 * Turn "article.ejs" into "articleFull.ejs" (to avoid namespace pollution)
 * Examine using partials
     * Determine what should be a partial
@@ -26,4 +26,5 @@ a [Sails](http://sailsjs.org) application
 * Add user permissions
 * Add comment section to article full
 * Organize folder + file structure better (will require some adjustments to the code)
-* Share via Github
+* Share via Github - done 
+
